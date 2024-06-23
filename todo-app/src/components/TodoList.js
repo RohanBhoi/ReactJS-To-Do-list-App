@@ -44,6 +44,8 @@ function TodoList() {
 
     return (
         <div className="todo-list">
+                  <h1> To do List</h1>
+
             {tasks.map(task => (
                 <TodoItem 
                     key = {task.id}
@@ -56,10 +58,13 @@ function TodoList() {
             <input 
                 value={text}
                 onChange={e => setText(e.target.value)}
+                placeholder='Add new task'
+                
             />
-
+                        
+            <div/>
             <button onClick={() => addTask(text)}> 
-                Add
+                Add Task
             </button>
 
         </div>

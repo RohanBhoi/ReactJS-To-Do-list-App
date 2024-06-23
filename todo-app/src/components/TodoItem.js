@@ -16,7 +16,7 @@ function TodoItem({ task, deleteTask, toggleCompleted }) {
             <p>{task.text}</p>
 
             <button onClick={ () => deleteTask(task.id)}>
-            X
+                X
             </button>
         </div>
     );
